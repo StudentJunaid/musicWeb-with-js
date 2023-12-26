@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Music App</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="icons">
+          <i class="fa-solid fa-less-than"></i>
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="content">
+          <img
+            src="https://img.freepik.com/premium-photo/girls-singing_693504-35.jpg"
+          />
+          <h1>Despocito</h1>
+          <p>Lorem ipsum dolor sit, amet</p>
+        </div>
+
+        <audio  id="song">
+          <source src="audio.mp3" type="audio/mpeg" />
+        </audio>
+        <input type="range" value="0" id="progress" />
+
+        <div class="bottom-icons">
+          <i class="fa-solid fa-backward" id="fa-backward"></i>
+          <div onclick="playPause()">
+            <i class="fa-solid fa-play" class="fa-play" id="ctrlIcon"></i>
+          </div>
+          <i class="fa-solid fa-forward" id="fa-forward"></i>
+        </div>
+      </div>
+    </main>
+
+  <script src="script.js"></script>
+  </body>
+</html>
